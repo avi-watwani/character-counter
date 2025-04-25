@@ -13,7 +13,7 @@ function App() {
 
       <textarea
         value={text}
-        className="text-area"
+        style={{ width: '90vw', height: '80vh' }}
         onChange={(e) => setText(e.target.value)}
         placeholder="Type or paste your text here..."
       ></textarea>
