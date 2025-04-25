@@ -11,7 +11,7 @@ function App() {
   const spaceCount = (text.match(/\s/g) || []).length;
 
   return (
-    <div className="App" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div className="App" style={{ display: 'flex', flexDirection: 'column', height: '100vh', backgroundColor: '#f0f0f0' }}>
       {/* Heading Section */}
       <header style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <h1>Online Character Counter</h1>
