@@ -5,28 +5,20 @@ function App() {
   const [text, setText] = useState('');
 
   const charCount = text.length;
-  const words = text.trim().split(/\s+/);
-  const wordCount = text.trim() === '' ? 0 : words.length;
+  const wordCount = text.trim() ? text.trim().split(/\s+/).length : 0;
+
   return (
-    <div className="App" style={{ display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'center', alignItems: 'center' }}>
+    <div className="App">
       <h1>Character & Word Counter</h1>
 
       <textarea
-        placeholder='Type or paste your text here...'
         value={text}
+        className="text-area"
         onChange={(e) => setText(e.target.value)}
-        style={{
-          flex: 1,
-          resize: 'none',
-          fontSize: '1.2rem',
-          width: '90%',
-          boxSizing: 'border-box',
-        }}
+        placeholder="Type or paste your text here..."
       ></textarea>
 
-      <h1>Characters: {charCount}, Words: {wordCount}</h1>
-      <br />
-      <br />
+      <h2>Characters: {charCount}, Words: {wordCount}</h2>
     </div>
   );
 }
