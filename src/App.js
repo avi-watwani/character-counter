@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Character & Word Counter</h1>
+      <h1>Online Character Counter</h1>
 
       <textarea
         value={text}
