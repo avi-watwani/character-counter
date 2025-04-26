@@ -14,7 +14,9 @@ function App() {
     <div className="App" style={{ display: 'flex', flexDirection: 'column', height: '100vh', backgroundColor: '#f0f0f0' }}>
       {/* Heading Section */}
       <header style={{ flex: '1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <h1>Online Character Counter</h1>
+        <h1 style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', textAlign: 'center' }}>
+          Online Character Counter
+        </h1>
       </header>
 
       {/* Text Area Section */}
